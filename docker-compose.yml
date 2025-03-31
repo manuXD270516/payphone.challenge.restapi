@@ -1,0 +1,8 @@
+version: '3.9'
+
+services:
+  payphone.challenge.restapi.webapi:
+    image: ${DOCKER_REGISTRY-}payphone.challenge.restapi.webapi
+    build:
+      context: .
+      dockerfile: src/WebApi/Dockerfile
